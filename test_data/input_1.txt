@@ -1,0 +1,7 @@
+[21/Apr/2009:11:39:51 -0700] conn=11 fd=608 slot=608 connection from 207.1.153.57 to 192.18.122.139
+[21/Apr/2009:11:39:51 -0700] conn=11 op=0 BIND dn="cn=Directory Manager" method=128 version=3
+[21/Apr/2009:11:39:51 -0700] conn=11 op=0 RESULT err=0 tag=97 nentries=0 etime=0
+[21/Apr/2009:11:39:51 -0700] conn=11 op=1 SRCH base="dc=example,dc=com" scope=2 filter="(mobile=+1 123 456-7890)"
+[21/Apr/2009:11:39:51 -0700] conn=11 op=1 RESULT err=0 tag=101 nentries=1 etime=3 notes=U
+[21/Apr/2009:11:39:51 -0700] conn=11 op=2 UNBIND
+[21/Apr/2009:11:39:51 -0700] conn=11 op=2 fd=608 closed - U1

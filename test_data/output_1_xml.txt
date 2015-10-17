@@ -1,0 +1,48 @@
+<Event>
+    <DateTime>21/Apr/2009:11:39:51 -0700</DateTime>
+    <Client>207.1.153.57</Client>
+    <Server>192.18.122.139</Server>
+    <Connection>11</Connection>
+    <SSL>false</SSL>
+    <Operation>0</Operation>
+    <AuthenticatedDN>cn=Directory Manager</AuthenticatedDN>
+    <Action>BIND</Action>
+    <Requests>
+        <Request>BIND dn=&#34;cn=Directory Manager&#34; method=128 version=3</Request>
+    </Requests>
+    <Responses>
+        <Response>RESULT err=0 tag=97 nentries=0 etime=0</Response>
+    </Responses>
+</Event>
+<Event>
+    <DateTime>21/Apr/2009:11:39:51 -0700</DateTime>
+    <Client>207.1.153.57</Client>
+    <Server>192.18.122.139</Server>
+    <Connection>11</Connection>
+    <SSL>false</SSL>
+    <Operation>1</Operation>
+    <AuthenticatedDN>cn=Directory Manager</AuthenticatedDN>
+    <Action>SRCH</Action>
+    <Requests>
+        <Request>SRCH base=&#34;dc=example,dc=com&#34; scope=2 filter=&#34;(mobile=+1 123 456-7890)&#34;</Request>
+    </Requests>
+    <Responses>
+        <Response>RESULT err=0 tag=101 nentries=1 etime=3 notes=U</Response>
+    </Responses>
+</Event>
+<Event>
+    <DateTime>21/Apr/2009:11:39:51 -0700</DateTime>
+    <Client>207.1.153.57</Client>
+    <Server>192.18.122.139</Server>
+    <Connection>11</Connection>
+    <SSL>false</SSL>
+    <Operation>2</Operation>
+    <AuthenticatedDN>cn=Directory Manager</AuthenticatedDN>
+    <Action>UNBIND</Action>
+    <Requests>
+        <Request>UNBIND</Request>
+    </Requests>
+    <Responses>
+        <Response>fd=608 closed - U1</Response>
+    </Responses>
+</Event>

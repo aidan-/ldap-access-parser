@@ -1,0 +1,32 @@
+<Event>
+    <DateTime>21/Apr/2009:11:39:55 -0700</DateTime>
+    <Client>207.1.153.51</Client>
+    <Server>192.18.122.139</Server>
+    <Connection>14</Connection>
+    <SSL>false</SSL>
+    <Operation>0</Operation>
+    <AuthenticatedDN>__anonymous__</AuthenticatedDN>
+    <Action>BIND</Action>
+    <Requests>
+        <Request>BIND dn=&#34;&#34; method=sasl version=3 mech=DIGEST-MD5</Request>
+    </Requests>
+    <Responses>
+        <Response>RESULT err=14 tag=97 nentries=0 etime=0, SASL bind in progress</Response>
+    </Responses>
+</Event>
+<Event>
+    <DateTime>21/Apr/2009:11:39:55 -0700</DateTime>
+    <Client>207.1.153.51</Client>
+    <Server>192.18.122.139</Server>
+    <Connection>14</Connection>
+    <SSL>false</SSL>
+    <Operation>1</Operation>
+    <AuthenticatedDN>uid=jdoe,dc=example,dc=com</AuthenticatedDN>
+    <Action>BIND</Action>
+    <Requests>
+        <Request>BIND dn=&#34;uid=jdoe,dc=example,dc=com&#34; method=sasl version=3 mech=DIGEST-MD5</Request>
+    </Requests>
+    <Responses>
+        <Response>RESULT err=0 tag=97 nentries=0 etime=0 dn=&#34;uid=jdoe,dc=example,dc=com&#34;</Response>
+    </Responses>
+</Event>

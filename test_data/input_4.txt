@@ -1,0 +1,10 @@
+[02/Sep/2014:11:05:56 -0400] conn=35 op=1 fd=64 closed - U1
+[02/Sep/2014:11:05:56 -0400] conn=36 fd=64 slot=64 connection from 127.0.0.1 to 127.0.0.1
+[02/Sep/2014:11:05:56 -0400] conn=36 op=0 BIND dn="" method=128 version=3
+[02/Sep/2014:11:05:56 -0400] conn=36 op=0 RESULT err=0 tag=97 nentries=0 etime=0 dn=""
+[02/Sep/2014:11:05:56 -0400] conn=36 op=1 SRCH base="dc=example,dc=com" scope=2 filter="(uid=scarter)" attrs="c"
+[02/Sep/2014:11:05:56 -0400] conn=36 op=1 RESULT err=0 tag=101 nentries=1 etime=0
+[02/Sep/2014:11:05:56 -0400] conn=36 op=2 BIND dn="uid=scarter,ou=people,dc=example,dc=com" method=128 version=3
+[02/Sep/2014:11:05:56 -0400] conn=36 op=2 RESULT err=0 tag=97 nentries=0 etime=0 dn="uid=scarter,ou=people,dc=example,dc=com"
+[02/Sep/2014:11:05:56 -0400] conn=36 op=3 UNBIND
+[02/Sep/2014:11:05:56 -0400] conn=36 op=3 fd=64 closed - U1

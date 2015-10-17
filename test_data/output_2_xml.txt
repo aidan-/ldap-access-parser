@@ -1,0 +1,34 @@
+<Event>
+    <DateTime>07/May/2009:11:43:28 -0700</DateTime>
+    <Client>207.1.153.32</Client>
+    <Server>192.18.122.139</Server>
+    <Connection>877</Connection>
+    <SSL>false</SSL>
+    <Operation>0</Operation>
+    <AuthenticatedDN>cn=Directory Manager</AuthenticatedDN>
+    <Action>BIND</Action>
+    <Requests>
+        <Request>BIND dn=&#34;cn=Directory Manager&#34; method=128 version=3</Request>
+    </Requests>
+    <Responses>
+        <Response>RESULT err=0 tag=97 nentries=0 etime=0</Response>
+    </Responses>
+</Event>
+<Event>
+    <DateTime>07/May/2009:11:43:29 -0700</DateTime>
+    <Client>207.1.153.32</Client>
+    <Server>192.18.122.139</Server>
+    <Connection>877</Connection>
+    <SSL>false</SSL>
+    <Operation>1</Operation>
+    <AuthenticatedDN>cn=Directory Manager</AuthenticatedDN>
+    <Action>SRCH</Action>
+    <Requests>
+        <Request>SRCH base=&#34;(ou=People)&#34; scope=2 filter=&#34;(uid=*)&#34;</Request>
+        <Request>SORT uid</Request>
+        <Request>VLV 0:5:0210 10:5397 (0)</Request>
+    </Requests>
+    <Responses>
+        <Response>RESULT err=0 tag=101 nentries=1 etime=0</Response>
+    </Responses>
+</Event>

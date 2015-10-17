@@ -1,0 +1,4 @@
+*.log
+lap
+ldap_access_parser
+*.swp

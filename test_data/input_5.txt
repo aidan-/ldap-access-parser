@@ -1,0 +1,2 @@
+[30/Sep/2015:01:04:21 +1000] conn=21782900 fd=196 slot=196 SSL connection from 130.1.10.4 to 130.3.1.40
+[30/Sep/2015:01:04:21 +1000] conn=21782900 op=-1 fd=196 closed - Encountered end of file.

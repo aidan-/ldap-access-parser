@@ -1,0 +1,7 @@
+[07/May/2009:11:43:28 -0700] conn=877 fd=608 slot=608 connection from 207.1.153.32 to 192.18.122.139
+[07/May/2009:11:43:28 -0700] conn=877 op=0 BIND dn="cn=Directory Manager" method=128 version=3
+[07/May/2009:11:43:28 -0700] conn=877 op=0 RESULT err=0 tag=97 nentries=0 etime=0
+[07/May/2009:11:43:29 -0700] conn=877 op=1 SRCH base="(ou=People)" scope=2 filter="(uid=*)"
+[07/May/2009:11:43:29 -0700] conn=877 op=1 SORT uid
+[07/May/2009:11:43:29 -0700] conn=877 op=1 VLV 0:5:0210 10:5397 (0)
+[07/May/2009:11:43:29 -0700] conn=877 op=1 RESULT err=0 tag=101 nentries=1 etime=0

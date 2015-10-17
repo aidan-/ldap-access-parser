@@ -1,0 +1,5 @@
+[21/Apr/2009:11:39:55 -0700] conn=14 fd=700 slot=700 connection from 207.1.153.51 to 192.18.122.139
+[21/Apr/2009:11:39:55 -0700] conn=14 op=0 BIND dn="" method=sasl version=3 mech=DIGEST-MD5
+[21/Apr/2009:11:39:55 -0700] conn=14 op=0 RESULT err=14 tag=97 nentries=0 etime=0, SASL bind in progress
+[21/Apr/2009:11:39:55 -0700] conn=14 op=1 BIND dn="uid=jdoe,dc=example,dc=com" method=sasl version=3 mech=DIGEST-MD5
+[21/Apr/2009:11:39:55 -0700] conn=14 op=1 RESULT err=0 tag=97 nentries=0 etime=0 dn="uid=jdoe,dc=example,dc=com"
