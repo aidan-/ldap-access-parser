@@ -1,4 +1,4 @@
-LDAP Access-log Parser
+LDAP Access-log Parser [![Build Status](https://travis-ci.org/aidan-/ldap-access-parser.svg)](https://travis-ci.org/aidan-/ldap-access-parser/)
 ======================
 LDAP Access-log Parser (LAP) is a simple program designed to parse 389 Directory Server (also Fedora Directory Server, Red Hat Directory Server, etc) access logs into individual context aware events ready to be sent to upstream services like ElasticSearch for further analysis.
 
