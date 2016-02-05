@@ -16,6 +16,7 @@ import (
 
 const (
 	timeFormat = "02/Jan/2006:03:04:05 -0700"
+	version = "v1.0"
 )
 
 //Event (request(s) paired with response) to be output in either
@@ -38,6 +39,7 @@ type Event struct {
 }
 
 type config struct {
+	Version      *bool
 	TailFile     *bool
 	OutputFormat *string
 	LogFiles     *[]string
@@ -98,6 +100,7 @@ func timeDuration(start string, end string) (int, error) {
 }
 
 func init() {
+	c.Version = flag.Bool("V", false, "prints version information")
 	c.TailFile = flag.Bool("tail", false, "tail the log file to receive future events")
 	c.OutputFormat = flag.String("format", "json", "format to output log events.  possible values are 'json' or 'xml'.")
 	c.Output = os.Stdout //configurable to help with unit testing
@@ -242,6 +245,11 @@ func main() {
 	activeConnections := map[int]Event{}
 
 	flag.Parse()
+
+	if *c.Version {
+		fmt.Printf("%s %s\n", os.Args[0], version)
+		os.Exit(0)
+	}
 
 	if len(flag.Args()) < 1 {
 		fmt.Println("ERROR: You must specify at least one log file.")
