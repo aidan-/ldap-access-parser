@@ -19,7 +19,7 @@ func TestEventPrintJSON(t *testing.T) {
 	format := "json"
 	c := config{Output: &b, OutputFormat: &format}
 
-	events := []Event{Event{}}
+	events := []Event{}
 	eventJSON := []string{`{"time":"","client":"","server":"","connection":0,"ssl":false,"operation":0,"action":"","requests":null,"responses":null}`}
 
 	for n, e := range events {

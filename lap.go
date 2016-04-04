@@ -16,7 +16,7 @@ import (
 
 const (
 	timeFormat = "02/Jan/2006:03:04:05 -0700"
-	version = "v1.0"
+	version    = "v1.0"
 )
 
 //Event (request(s) paired with response) to be output in either
@@ -49,7 +49,7 @@ type config struct {
 //holds config
 var c config
 
-//regexes to extract relevent fields from log lines
+//regexes to extract relevant fields from log lines
 var lineMatch = `^\[(?P<time>.*)\] conn=(?P<conn_num>\d+) (?P<event>.*)`
 var connectionMatch = `(?P<ssl>SSL)? connection from (?P<client_ip>.*) to (?P<server_ip>.*)`
 var operationMatch = `op=(?P<opnum>\-?\d+) (?P<operation>\w+)(?P<details>.+)?`
